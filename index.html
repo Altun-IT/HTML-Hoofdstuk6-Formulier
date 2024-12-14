@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltunIT | Formulier </title>
+    
+</head>
+<body>
+    <form action="/verzenden" method="post">
+        <label for="aanhef">Aanhef:</label>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="aanhef" value="Mr.">
+
+        <label for="Mevr.">Mevr.</label>
+        <input type="radio" id="Mevr." name="aanhef" value="Mevr.">
+        <br>
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" placeholder="Voer je naam in:" required>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Voer je e-mailadres in" required>
+        <br>
+        <label for="password">Wachtwoord:</label>
+        <input type="password" id="password" name="password" maxlength="16" required>
+        <br>
+        <label for="telefoon">Telefoonnummer:</label>
+        <input type="tel" id="telefoon" name="telefoon" placeholder="Voer je telefoonnummer in">
+        <br>
+        <label for="gdatum">Geboortedatum:</label>
+        <input type="date" id="gdatum" name="gdatum">
+        <br>
+        <label for="hoeveelheid">Hoeveelheid:</label>
+        <input type="number" id="hoeveelheid" name="hoeveelheid" min="0" max="50" value="1">
+        <br>
+        <label for="topic">Onderewerp</label>
+        <select name="topic" id="topic">
+          <option value="">Kies een onderwerp</option>
+          <option value="vraag">Algemene vraag</option>
+          <option value="feedback">Feedback</option>
+          <option value="support">Ondersteuning</option>
+        </select>
+        <br>
+        <label for="message">Bericht</label>
+        <textarea name="message" id="message" rows="4" placeholder="Typ hier je bericht" required></textarea>
+        <br>
+        <label for="subscribe">Schrijf je in voor onze nieuwsbrief</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Verzenden</button>
+      </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form action="/verzenden" method="post">
+    <div>
+        <label for="aanhef">Aanhef: </label>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="aanhef" value="Mr.">
+
+        <label for="Mevr.">Mevr.</label>
+        <input type="radio" id="Mevr." name="aanhef" value="Mevr.">
+    
+    </div>
+    <br>
+    <div>
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" placeholder="Voer je naam in" required>
+    </div>
+    <br>
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Voer je e-mailadres in" required>
+    </div>
+    <br>
+    <div>
+        <label for="password">Wachtwoord:</label>
+        <input type="password" id="password" name="password" maxlength="16" required>
+    </div>
+    <br>
+    <div>
+        <label for="telefoon">Telefoonnummer:</label>
+        <input type="tel" id="telefoon" name="telefoon" placeholder="Voer je telefoonnummer in">
+    </div>
+    <br>
+    <div>
+        <label for="gdatum">Geboortedatum:</label>
+        <input type="date" id="gdatum" name="gdatum">
+    </div>
+    <br>
+    <div>
+        <label for="hoeveelheid">Hoeveelheid:</label>
+        <input type="number" id="hoeveelheid" name="hoeveelheid" min="0" max="50" value="1">
+    </div>
+    <br>
+        <div>
+      <label for="topic">Onderwerp</label>
+      <select id="topic" name="topic" required>
+        <option value="">Kies een onderwerp</option>
+        <option value="vraag">Algemene vraag</option>
+        <option value="feedback">Feedback</option>
+        <option value="support">Ondersteuning</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="message">Bericht</label>
+      <textarea id="message" name="message" rows="4" placeholder="Typ je bericht hier..." required></textarea>
+    
+    </div>
+    <br>
+    <div>
+        <label for="subscribe">Schrijf je in voor onze nieuwsbrief</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+
+    </div>
+    <br>
+      <button type="reset">Reset</button>
+      <button type="submit">Verzenden</button>
+      
+</form> -->
